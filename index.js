@@ -1,16 +1,32 @@
-// TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown")
+const gm = require("./utils/generateMarkdown");
 
-// TODO: Create an array of questions for user input
+const requiredField = (input) => input ? true : "This field is required.";
+
+const licenses = [
+    "---None---",
+    "Apache License 2.0",
+    "GNU General Public License v3.0",
+    "MIT License",
+    "BSD 2-Clause \"Simplified\" License",
+    "BSD 3-Clause \"New\" or \"Revise\" License",
+    "Boost Software License 1.0",
+    "Creative Commons Zero v1.0 Universal",
+    "Eclipse Public License 2.0",
+    "GNU Affero General Public License v3.0",
+    "GNU General Public License v2.0",
+    "GNU Lesser General Public License v2.1",
+    "Mozilla Public License 2.0",
+    "The Unlicense"
+];
 
 const questions = [
     {
         type: "input",
         message: "title:",
         name: "title",
-        validate: (input) => input ? true : "Project title is required."
+        validate: requiredField
     },
     {
         type: "input",
@@ -36,6 +52,24 @@ const questions = [
         type: "input",
         message: "test instructions:",
         name: "test"
+    },
+    {
+        type: "list",
+        message: "license:",
+        choices: licenses,
+        name: "license"
+    },
+    {
+        type: "input",
+        message: "GitHub username:",
+        name: "username",
+        validate: requiredField
+    },
+    {
+        type: "input",
+        message: "email:",
+        name: "email",
+        validate: requiredField
     }
 ];
 
@@ -47,7 +81,7 @@ function init() {
     console.log("\nPlease answer each question to fill out the coresponding section in your README file.");
     console.log("If you wish to skip a question, simply press the enter key.\n");
     console.log("Enter your project...");
-    inquirer.prompt(questions).then((response) => console.log(response.title));
+    inquirer.prompt(questions).then((response) => console.log(gm.generateMarkdown(response)));
 }
 
 // Function call to initialize app
