@@ -51,7 +51,7 @@ const questions = [
     {
         type: "input",
         message: "test instructions:",
-        name: "test"
+        name: "testing"
     },
     {
         type: "list",
@@ -80,8 +80,11 @@ function writeToFile(fileName, data) {}
 function init() {
     console.log("\nPlease answer each question to fill out the coresponding section in your README file.");
     console.log("If you wish to skip a question, simply press the enter key.\n");
-    console.log("Enter your project...");
-    inquirer.prompt(questions).then((response) => console.log(gm.generateMarkdown(response)));
+
+    console.log("Please enter your project...");
+    inquirer
+        .prompt(questions)
+        .then((response) => console.log(gm.generateMarkdown(response)));
 }
 
 // Function call to initialize app
