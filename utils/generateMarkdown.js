@@ -122,7 +122,7 @@ function generateMarkdown(data) {
 
   markdown += "\n\n## Table of Contents\n";
 
-  if(installation || usage || contribution || test) {
+  if(installation || usage || contribution || testing || license) {
     let postTOC = ""; // Content after the Table of Contents
 
     if(installation) {
@@ -148,6 +148,13 @@ function generateMarkdown(data) {
             
       postTOC += "\n\n<a name='testing'/>";
       postTOC += `\n## Testing\n\n${testing}`;
+    }
+    if(license) {
+      markdown += "\n[License](#license)";
+            
+      postTOC += "\n\n<a name='license'/>";
+      postTOC += `\n## License\n\nDistributed under the ${license.includes("License") ? license : `${license} license`}.\n`;
+      postTOC += `Please click the license badge at the top or [here](${renderLicenseLink(license)}) for more details.`;
     }
 
     markdown += "\n[Questions](#questions)";
