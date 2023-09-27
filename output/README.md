@@ -1,10 +1,10 @@
-[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/license/bsd-2-clause/)
 
-# al;ksdjfa;
+# BigBinge
 
 ## Description
 
-al;ksdfj;alksjg
+This is a description.
 
 ## Table of Contents
 
@@ -15,34 +15,34 @@ al;ksdfj;alksjg
 [License](#license)
 [Questions](#questions)
 
-<a name='installation'/>
+<a name='installation'>
 ## Installation
 
-al;dksjg;laksjdg
+These are the installation instructions.
 
-<a name='usage'/>
+<a name='usage'>
 ## Usage
 
-a;lsdkjg;lgskj
+This is the usage information.
 
-<a name='contribution'/>
+<a name='contribution'>
 ## Contribution
 
-l;aksdjg;lksja
+These are the contribution guidelines.
 
-<a name='testing'/>
+<a name='testing'>
 ## Testing
 
-alkjsda;lgfkj
+These are the test instructions.
 
-<a name='license'/>
+<a name='license'>
 ## License
 
-Distributed under the GNU General Public License v3.0.
-Please click the license badge at the top or [here](https://www.gnu.org/licenses/gpl-3.0) for more details.
+Distributed under the BSD 2-Clause "Simplified" License.
+Please click the license badge at the top or [here](https://opensource.org/license/bsd-2-clause/) for more details.
 
-<a name='questions'/>
+<a name='questions'>
 ## Questions
 
-[GitHub](https://github.com/a;lsdkgj;adlsjg)
-If you have any questions, you can reach me via my [email](asdkgj;ldkgaj).
+[GitHub](https://github.com/bhansi)
+If you have any questions, you can reach me via my [email](bhansi@email.com).

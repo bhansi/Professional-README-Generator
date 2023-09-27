@@ -128,38 +128,38 @@ function generateMarkdown(data) {
     if(installation) {
       markdown += "\n[Installation](#installation)";
 
-      postTOC += "\n\n<a name='installation'/>";
+      postTOC += "\n\n<a name='installation'>";
       postTOC += `\n## Installation\n\n${installation}`;
     }
     if(usage) {
       markdown += "\n[Usage](#usage)";
       
-      postTOC += "\n\n<a name='usage'/>";
+      postTOC += "\n\n<a name='usage'>";
       postTOC += `\n## Usage\n\n${usage}`;
     }
     if(contribution) {
       markdown += "\n[Contribution](#contribution)";
       
-      postTOC += "\n\n<a name='contribution'/>";
+      postTOC += "\n\n<a name='contribution'>";
       postTOC += `\n## Contribution\n\n${contribution}`;
     }
     if(testing) {
       markdown += "\n[Testing](#testing)";
             
-      postTOC += "\n\n<a name='testing'/>";
+      postTOC += "\n\n<a name='testing'>";
       postTOC += `\n## Testing\n\n${testing}`;
     }
     if(license) {
       markdown += "\n[License](#license)";
             
-      postTOC += "\n\n<a name='license'/>";
+      postTOC += "\n\n<a name='license'>";
       postTOC += `\n## License\n\nDistributed under the ${license.includes("License") ? license : `${license} license`}.\n`;
       postTOC += `Please click the license badge at the top or [here](${renderLicenseLink(license)}) for more details.`;
     }
 
     markdown += "\n[Questions](#questions)";
 
-    postTOC += "\n\n<a name='questions'/>";
+    postTOC += "\n\n<a name='questions'>";
     postTOC += `\n## Questions\n\n[GitHub](https://github.com/${username})`;
     postTOC += `\nIf you have any questions, you can reach me via my [email](${email}).`;
 
@@ -167,7 +167,7 @@ function generateMarkdown(data) {
   }
   else {
     markdown += "\n[Questions](#questions)";
-    markdown += "\n\n<a name='questions'/>";
+    markdown += "\n\n<a name='questions'>";
     markdown += `\n## Questions\n\n[GitHub](https://github.com/${username})`;
     markdown += `\nIf you have any questions, you can reach me via my [email](${email}).`;
   }
