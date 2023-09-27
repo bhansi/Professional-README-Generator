@@ -98,7 +98,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license === "---None---") return "";
-  else return `[![License](${renderLicenseBadge(license)})](${renderLicenseLink(license)})<br><br>`
+  else return `[![License](${renderLicenseBadge(license)})](${renderLicenseLink(license)})\n\n`
 }
 
 // TODO: Create a function to generate markdown for README
@@ -118,58 +118,58 @@ function generateMarkdown(data) {
   let markdown = renderLicenseSection(license);
   markdown += `# ${title}`;
 
-  if(description) markdown += `<br><br>## Description<br><br>${description}`;
+  if(description) markdown += `\n\n## Description\n\n${description}`;
 
-  markdown += "<br><br>## Table of Contents<br>";
+  markdown += "\n\n## Table of Contents\n";
 
   if(installation || usage || contribution || testing || license) {
     let postTOC = ""; // Content after the Table of Contents
 
     if(installation) {
-      markdown += "<br>[Installation](#installation)";
+      markdown += "\n[Installation](#installation)";
 
-      postTOC += "<br><br><a name='installation'>";
-      postTOC += `<br>## Installation<br><br>${installation}`;
+      postTOC += "\n\n<a name='installation'>";
+      postTOC += `\n## Installation\n\n${installation}`;
     }
     if(usage) {
-      markdown += "<br>[Usage](#usage)";
+      markdown += "\n[Usage](#usage)";
       
-      postTOC += "<br><br><a name='usage'>";
-      postTOC += `<br>## Usage<br><br>${usage}`;
+      postTOC += "\n\n<a name='usage'>";
+      postTOC += `\n## Usage\n\n${usage}`;
     }
     if(contribution) {
-      markdown += "<br>[Contribution](#contribution)";
+      markdown += "\n[Contribution](#contribution)";
       
-      postTOC += "<br><br><a name='contribution'>";
-      postTOC += `<br>## Contribution<br><br>${contribution}`;
+      postTOC += "\n\n<a name='contribution'>";
+      postTOC += `\n## Contribution\n\n${contribution}`;
     }
     if(testing) {
-      markdown += "<br>[Testing](#testing)";
+      markdown += "\n[Testing](#testing)";
             
-      postTOC += "<br><br><a name='testing'>";
-      postTOC += `<br>## Testing<br><br>${testing}`;
+      postTOC += "\n\n<a name='testing'>";
+      postTOC += `\n## Testing\n\n${testing}`;
     }
     if(license) {
-      markdown += "<br>[License](#license)";
+      markdown += "\n[License](#license)";
             
-      postTOC += "<br><br><a name='license'>";
-      postTOC += `<br>## License<br><br>Distributed under the ${license.includes("License") ? license : `${license} license`}.<br>`;
+      postTOC += "\n\n<a name='license'>";
+      postTOC += `\n## License\n\nDistributed under the ${license.includes("License") ? license : `${license} license`}.\n`;
       postTOC += `Please click the license badge at the top or [here](${renderLicenseLink(license)}) for more details.`;
     }
 
-    markdown += "<br>[Questions](#questions)";
+    markdown += "\n[Questions](#questions)";
 
-    postTOC += "<br><br><a name='questions'>";
-    postTOC += `<br>## Questions<br><br>[GitHub](https://github.com/${username})`;
-    postTOC += `<br>If you have any questions, you can reach me via my [email](${email}).`;
+    postTOC += "\n\n<a name='questions'>";
+    postTOC += `\n## Questions\n\n[GitHub](https://github.com/${username})`;
+    postTOC += `\nIf you have any questions, you can reach me via my [email](${email}).`;
 
     markdown += postTOC;
   }
   else {
-    markdown += "<br>[Questions](#questions)";
-    markdown += "<br><br><a name='questions'>";
-    markdown += `<br>## Questions<br><br>[GitHub](https://github.com/${username})`;
-    markdown += `<br>If you have any questions, you can reach me via my [email](${email}).`;
+    markdown += "\n[Questions](#questions)";
+    markdown += "\n\n<a name='questions'>";
+    markdown += `\n## Questions\n\n[GitHub](https://github.com/${username})`;
+    markdown += `\nIf you have any questions, you can reach me via my [email](${email}).`;
   }
 
   return markdown;
