@@ -126,39 +126,33 @@ function generateMarkdown(data) {
     let postTOC = ""; // Content after the Table of Contents
 
     if(installation) {
-      markdown += `[Installation](#installation)
-      `;
+      markdown += `[Installation](#installation)<br>`;
 
       postTOC += `\n\n## Installation\n\n${installation}`;
     }
     if(usage) {
-      markdown += `[Usage](#usage)
-      `;
+      markdown += `[Usage](#usage)<br>`;
       
       postTOC += `\n\n## Usage\n\n${usage}`;
     }
     if(contribution) {
-      markdown += `[Contribution](#contribution)
-      `;
+      markdown += `[Contribution](#contribution)<br>`;
       
       postTOC += `\n\n## Contribution\n\n${contribution}`;
     }
     if(testing) {
-      markdown += `[Testing](#testing)
-      `;
+      markdown += `[Testing](#testing)<br>`;
             
       postTOC += `\n\n## Testing\n\n${testing}`;
     }
     if(license) {
-      markdown += `[License](#license)
-      `;
+      markdown += `[License](#license)<br>`;
             
       postTOC += `\n\n## License\n\nDistributed under the ${license.includes("License") ? license : `${license} license`}.\n`;
       postTOC += `Please click the license badge at the top or [here](${renderLicenseLink(license)}) for more details.`;
     }
 
-    markdown += `[Questions](#questions)
-    `;
+    markdown += `[Questions](#questions)<br>`;
 
     postTOC += `\n\n## Questions\n\n[GitHub](https://github.com/${username})`;
     postTOC += `\nIf you have any questions, you can reach me via my [email](${email}).`;
@@ -166,8 +160,7 @@ function generateMarkdown(data) {
     markdown += postTOC;
   }
   else {
-    markdown += `[Questions](#questions)
-    `;
+    markdown += `[Questions](#questions)<br>`;
     markdown += `\n\n## Questions\n\n[GitHub](https://github.com/${username})`;
     markdown += `\nIf you have any questions, you can reach me via my [email](${email}).`;
   }
