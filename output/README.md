@@ -1,48 +1,42 @@
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/license/bsd-3-clause/)
+[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-# BigBinge
+# ;laksdfj;lajksf
 
 ## Description
 
-a;lskdjf;laksdjf
+a;lsdkjf;lakjsdf
 
 ## Table of Contents
 
-[Installation](#installation)
-[Usage](#usage)
-[Contribution](#contribution)
-[Testing](#testing)
-[License](#license)
-[Questions](#questions)
+[Installation](#installation)	
+[Usage](#usage)	
+[Contribution](#contribution)	
+[Testing](#testing)	
+[License](#license)	
+[Questions](#questions)	
 
-<a name='installation'>
 ## Installation
 
-al;ksdjf;lakjsdf
+a;lskdfj;alskdjf
 
-<a name='usage'>
 ## Usage
 
-a;lskdfj;laksdjf
+a;slkdfj;laksdfj
 
-<a name='contribution'>
 ## Contribution
 
-a;lsdkjf;alskdjf
+;alskdjflkadsjf
 
-<a name='testing'>
 ## Testing
 
-asl;kdjf;aldsjfk
+a;lksdjf;aldjkfs
 
-<a name='license'>
 ## License
 
-Distributed under the BSD 3-Clause "New" or "Revised" License.
-Please click the license badge at the top or [here](https://opensource.org/license/bsd-3-clause/) for more details.
+Distributed under the GNU General Public License v3.0.
+Please click the license badge at the top or [here](https://www.gnu.org/licenses/gpl-3.0) for more details.
 
-<a name='questions'>
 ## Questions
 
-[GitHub](https://github.com/bhansi)
-If you have any questions, you can reach me via my [email](al;ksdjf;lajskdf).
+[GitHub](https://github.com/al;ksdfj;afds)
+If you have any questions, you can reach me via my [email](;laskdjf;alds).

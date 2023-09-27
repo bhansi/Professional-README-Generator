@@ -126,49 +126,42 @@ function generateMarkdown(data) {
     let postTOC = ""; // Content after the Table of Contents
 
     if(installation) {
-      markdown += "\n[Installation](#installation)";
+      markdown += "\n[Installation](#installation)\t";
 
-      postTOC += "\n\n<a name='installation'>";
-      postTOC += `\n## Installation\n\n${installation}`;
+      postTOC += `\n\n## Installation\n\n${installation}`;
     }
     if(usage) {
-      markdown += "\n[Usage](#usage)";
+      markdown += "\n[Usage](#usage)\t";
       
-      postTOC += "\n\n<a name='usage'>";
-      postTOC += `\n## Usage\n\n${usage}`;
+      postTOC += `\n\n## Usage\n\n${usage}`;
     }
     if(contribution) {
-      markdown += "\n[Contribution](#contribution)";
+      markdown += "\n[Contribution](#contribution)\t";
       
-      postTOC += "\n\n<a name='contribution'>";
-      postTOC += `\n## Contribution\n\n${contribution}`;
+      postTOC += `\n\n## Contribution\n\n${contribution}`;
     }
     if(testing) {
-      markdown += "\n[Testing](#testing)";
+      markdown += "\n[Testing](#testing)\t";
             
-      postTOC += "\n\n<a name='testing'>";
-      postTOC += `\n## Testing\n\n${testing}`;
+      postTOC += `\n\n## Testing\n\n${testing}`;
     }
     if(license) {
-      markdown += "\n[License](#license)";
+      markdown += "\n[License](#license)\t";
             
-      postTOC += "\n\n<a name='license'>";
-      postTOC += `\n## License\n\nDistributed under the ${license.includes("License") ? license : `${license} license`}.\n`;
+      postTOC += `\n\n## License\n\nDistributed under the ${license.includes("License") ? license : `${license} license`}.\n`;
       postTOC += `Please click the license badge at the top or [here](${renderLicenseLink(license)}) for more details.`;
     }
 
-    markdown += "\n[Questions](#questions)";
+    markdown += "\n[Questions](#questions)\t";
 
-    postTOC += "\n\n<a name='questions'>";
-    postTOC += `\n## Questions\n\n[GitHub](https://github.com/${username})`;
+    postTOC += `\n\n## Questions\n\n[GitHub](https://github.com/${username})`;
     postTOC += `\nIf you have any questions, you can reach me via my [email](${email}).`;
 
     markdown += postTOC;
   }
   else {
-    markdown += "\n[Questions](#questions)";
-    markdown += "\n\n<a name='questions'>";
-    markdown += `\n## Questions\n\n[GitHub](https://github.com/${username})`;
+    markdown += "\n[Questions](#questions)\t";
+    markdown += `\n\n## Questions\n\n[GitHub](https://github.com/${username})`;
     markdown += `\nIf you have any questions, you can reach me via my [email](${email}).`;
   }
 
