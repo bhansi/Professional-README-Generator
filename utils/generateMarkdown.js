@@ -120,39 +120,39 @@ function generateMarkdown(data) {
 
   if(description) markdown += `\n\n## Description\n\n${description}`;
 
-  markdown += "\n\n## Table of Contents\n";
+  markdown += "\n\n## Table of Contents\n\n";
 
   if(installation || usage || contribution || testing || license) {
     let postTOC = ""; // Content after the Table of Contents
 
     if(installation) {
-      markdown += "\n[Installation](#installation)\t";
+      markdown += "[Installation](#installation)\t\n";
 
       postTOC += `\n\n## Installation\n\n${installation}`;
     }
     if(usage) {
-      markdown += "\n[Usage](#usage)\t";
+      markdown += "[Usage](#usage)\t\n";
       
       postTOC += `\n\n## Usage\n\n${usage}`;
     }
     if(contribution) {
-      markdown += "\n[Contribution](#contribution)\t";
+      markdown += "[Contribution](#contribution)\t\n";
       
       postTOC += `\n\n## Contribution\n\n${contribution}`;
     }
     if(testing) {
-      markdown += "\n[Testing](#testing)\t";
+      markdown += "[Testing](#testing)\t\n";
             
       postTOC += `\n\n## Testing\n\n${testing}`;
     }
     if(license) {
-      markdown += "\n[License](#license)\t";
+      markdown += "[License](#license)\t\n";
             
       postTOC += `\n\n## License\n\nDistributed under the ${license.includes("License") ? license : `${license} license`}.\n`;
       postTOC += `Please click the license badge at the top or [here](${renderLicenseLink(license)}) for more details.`;
     }
 
-    markdown += "\n[Questions](#questions)\t";
+    markdown += "[Questions](#questions)\t\n";
 
     postTOC += `\n\n## Questions\n\n[GitHub](https://github.com/${username})`;
     postTOC += `\nIf you have any questions, you can reach me via my [email](${email}).`;
@@ -160,7 +160,7 @@ function generateMarkdown(data) {
     markdown += postTOC;
   }
   else {
-    markdown += "\n[Questions](#questions)\t";
+    markdown += "[Questions](#questions)\t\n";
     markdown += `\n\n## Questions\n\n[GitHub](https://github.com/${username})`;
     markdown += `\nIf you have any questions, you can reach me via my [email](${email}).`;
   }
