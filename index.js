@@ -84,7 +84,14 @@ function init() {
     console.log("Please enter your project...");
     inquirer
         .prompt(questions)
-        .then((response) => console.log(gm.generateMarkdown(response)));
+        .then((response) => {
+            console.log(gm.generateMarkdown(response));
+            fs.writeFile(
+                "./output/README.md",
+                gm.generateMarkdown(response),
+                (error) => error ? console.log("Error writing to file: " + error) : console.log("Successfully generated README.md into output folder.")
+            );
+        });
 }
 
 // Function call to initialize app
