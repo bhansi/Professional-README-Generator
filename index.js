@@ -73,7 +73,6 @@ const questions = [
     }
 ];
 
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(
         `./output/${fileName}`,
@@ -82,7 +81,6 @@ function writeToFile(fileName, data) {
     );
 }
 
-// TODO: Create a function to initialize app
 function init() {
     console.log("\nPlease answer each question to fill out the coresponding section in your README file.");
     console.log("If you wish to skip a question, simply press the enter key.\n");
