@@ -155,7 +155,7 @@ function generateMarkdown(data) {
     markdown += `[Questions](#questions)<br>`;
 
     postTOC += `## Questions\n[GitHub](https://github.com/${username})`;
-    postTOC += `<br>If you have any questions, you can reach me via my [email](${email}).\n`;
+    postTOC += `<br>If you have any questions, you can reach me via my [email](mailto:${email}).\n`;
 
     markdown += `\n${postTOC}`;
   }

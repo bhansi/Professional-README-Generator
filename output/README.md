@@ -1,18 +1,18 @@
-[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-# a;dlsokgj;aoiweg
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/license/apache-2-0/)
+# BigBingew
 ## Description
-;aoiweghj;oaigjw
+la;skdjg;lakdjsg
 ## Table of Contents
 [Installation](#installation)<br>[Usage](#usage)<br>[Contribution](#contribution)<br>[Testing](#testing)<br>[License](#license)<br>[Questions](#questions)<br>
 ## Installation
-;aoewigj;aoewigj
+asd;glkja;gdsj
 ## Usage
-;aolsdghjn;oihgaew
+adsjg;laksdjg
 ## Contribution
-;oaighe;pwoihg
+asdgj;lkajdgs
 ## Testing
-al;skdjg;lkadsjg
+asdgj;lkajdgs
 ## License
-Distributed under the GNU General Public License v3.0.<br>Please click the license badge at the top or [here](https://www.gnu.org/licenses/gpl-3.0) for more details.
+Distributed under the Apache License 2.0.<br>Please click the license badge at the top or [here](https://opensource.org/license/apache-2-0/) for more details.
 ## Questions
-[GitHub](https://github.com/bhansi)<br>If you have any questions, you can reach me via my [email](baljotshansi@gmail.com).
+[GitHub](https://github.com/bhansi)<br>If you have any questions, you can reach me via my [email](mailto:bhansi@email.com).
