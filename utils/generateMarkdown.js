@@ -98,7 +98,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license === "---None---") return "";
-  else return `[![License](${renderLicenseBadge(license)})](${renderLicenseLink(license)})<br>`
+  else return `[![License](${renderLicenseBadge(license)})](${renderLicenseLink(license)})\n`
 }
 
 // TODO: Create a function to generate markdown for README
@@ -118,7 +118,7 @@ function generateMarkdown(data) {
   let markdown = renderLicenseSection(license);
   markdown += `# ${title}\n`;
 
-  if(description) markdown += `## Description<br>${description}\n`;
+  if(description) markdown += `## Description\n${description}\n`;
 
   markdown += "## Table of Contents\n";
 
@@ -157,7 +157,7 @@ function generateMarkdown(data) {
     postTOC += `## Questions\n[GitHub](https://github.com/${username})`;
     postTOC += `<br>If you have any questions, you can reach me via my [email](${email}).\n`;
 
-    markdown += postTOC;
+    markdown += `\n${postTOC}`;
   }
   else {
     markdown += `[Questions](#questions)\n`;
