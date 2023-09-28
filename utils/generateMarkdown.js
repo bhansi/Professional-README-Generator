@@ -145,7 +145,7 @@ function generateMarkdown(data) {
             
       postTOC += `## Testing\n${testing}\n`;
     }
-    if(license) {
+    if(license !== "---None---") {
       markdown += `[License](#license)<br>`;
             
       postTOC += `## License\nDistributed under the ${license.includes("License") ? license : `${license} license`}.<br>`;
@@ -162,7 +162,7 @@ function generateMarkdown(data) {
   else {
     markdown += `[Questions](#questions)\n`;
     markdown += `## Questions<br>[GitHub](https://github.com/${username})`;
-    markdown += `<br>If you have any questions, you can reach me via my [email](${email}).\n`;
+    markdown += `<br>If you have any questions, you can reach me via my [email](mailto:${email}).\n`;
   }
 
   return markdown;
