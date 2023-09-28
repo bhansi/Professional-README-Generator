@@ -116,11 +116,11 @@ function generateMarkdown(data) {
   } = data;
 
   let markdown = renderLicenseSection(license);
-  markdown += `# ${title}<br>`;
+  markdown += `# ${title}\n`;
 
-  if(description) markdown += `## Description<br>${description}<br>`;
+  if(description) markdown += `## Description<br>${description}\n`;
 
-  markdown += "## Table of Contents<br>";
+  markdown += "## Table of Contents\n";
 
   if(installation || usage || contribution || testing || license) {
     let postTOC = ""; // Content after the Table of Contents
@@ -128,41 +128,41 @@ function generateMarkdown(data) {
     if(installation) {
       markdown += `[Installation](#installation)<br>`;
 
-      postTOC += `## Installation<br>${installation}<br>`;
+      postTOC += `## Installation\n${installation}\n`;
     }
     if(usage) {
       markdown += `[Usage](#usage)<br>`;
       
-      postTOC += `## Usage<br>${usage}<br>`;
+      postTOC += `## Usage\n${usage}\n`;
     }
     if(contribution) {
       markdown += `[Contribution](#contribution)<br>`;
       
-      postTOC += `## Contribution<br>${contribution}<br>`;
+      postTOC += `## Contribution\n${contribution}\n`;
     }
     if(testing) {
       markdown += `[Testing](#testing)<br>`;
             
-      postTOC += `## Testing<br>${testing}<br>`;
+      postTOC += `## Testing\n${testing}\n`;
     }
     if(license) {
       markdown += `[License](#license)<br>`;
             
-      postTOC += `## License<br>Distributed under the ${license.includes("License") ? license : `${license} license`}.<br>`;
-      postTOC += `Please click the license badge at the top or [here](${renderLicenseLink(license)}) for more details.<br>`;
+      postTOC += `## License\nDistributed under the ${license.includes("License") ? license : `${license} license`}.<br>`;
+      postTOC += `Please click the license badge at the top or [here](${renderLicenseLink(license)}) for more details.\n`;
     }
 
     markdown += `[Questions](#questions)<br>`;
 
-    postTOC += `## Questions<br>[GitHub](https://github.com/${username})`;
-    postTOC += `<br>If you have any questions, you can reach me via my [email](${email}).<br>`;
+    postTOC += `## Questions\n[GitHub](https://github.com/${username})`;
+    postTOC += `<br>If you have any questions, you can reach me via my [email](${email}).\n`;
 
     markdown += postTOC;
   }
   else {
-    markdown += `[Questions](#questions)<br>`;
+    markdown += `[Questions](#questions)\n`;
     markdown += `## Questions<br>[GitHub](https://github.com/${username})`;
-    markdown += `<br>If you have any questions, you can reach me via my [email](${email}).<br>`;
+    markdown += `<br>If you have any questions, you can reach me via my [email](${email}).\n`;
   }
 
   return markdown;
