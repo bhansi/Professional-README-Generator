@@ -108,7 +108,7 @@ function generateMarkdown(data) {
     description,
     installation,
     usage,
-    contribution,
+    contributing,
     testing,
     license,
     username,
@@ -122,7 +122,8 @@ function generateMarkdown(data) {
 
   markdown += "## Table of Contents\n";
 
-  if(installation || usage || contribution || testing || license) {
+  // Create the table of contents and respective content based on if the user inputted it
+  if(installation || usage || contributing || testing || license) {
     let postTOC = ""; // Content after the Table of Contents
 
     if(installation) {
@@ -135,10 +136,10 @@ function generateMarkdown(data) {
       
       postTOC += `## Usage\n${usage}\n`;
     }
-    if(contribution) {
-      markdown += `[Contribution](#contribution)<br>`;
+    if(contributing) {
+      markdown += `[Contributing](#contributing)<br>`;
       
-      postTOC += `## Contribution\n${contribution}\n`;
+      postTOC += `## Contributing\n${contributing}\n`;
     }
     if(testing) {
       markdown += `[Testing](#testing)<br>`;
