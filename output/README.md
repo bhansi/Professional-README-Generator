@@ -1,18 +1,11 @@
-[![License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-# Professional README Generator
+# PWA Text Editor
 ## Description
-This application helps to generate a professional README file; it allows for user input to decide what the user want's to be generated.
+This application is a web based text editor that highlights JavaScript syntax. Additionally, it is a progressive web app (PWA) and can be installed on any device to work and feel like a native app.
 ## Table of Contents
-[Installation](#installation)<br>[Usage](#usage)<br>[Contributing](#contributing)<br>[Testing](#testing)<br>[License](#license)<br>[Questions](#questions)<br>
+[Installation](#installation)<br>[Usage](#usage)<br>[Questions](#questions)<br>
 ## Installation
-These are the installation instructions.
+ 
 ## Usage
-This is the usage information.
-## Contributing
-These are the contributing members.
-## Testing
-These are the test instructions.
-## License
-Distributed under the GNU General Public License v3.0.<br>Please click the license badge at the top or [here](https://www.gnu.org/licenses/gpl-3.0) for more details.
+ 
 ## Questions
-[GitHub](https://github.com/bhansi)<br>If you have any questions, you can reach me via my [email](mailto:bhansi@email.com).
+[GitHub](https://github.com/bhansi)<br>If you have any questions, you can reach me via my [email](mailto:baljotshansi@gmail.com).
